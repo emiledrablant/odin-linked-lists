@@ -21,7 +21,7 @@ test.set('kite', 'pink')
 test.set('lion', 'golden')
 test.set('elephant', 'grey')
 //console.log(JSON.parse(JSON.stringify(test.data)));
-test.set('caca qui pue', 'bien marron')
+test.set('oubah', 'oubih')
 
 //console.log(JSON.parse(JSON.stringify(test.data)));
 
