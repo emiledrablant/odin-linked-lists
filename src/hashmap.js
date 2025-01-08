@@ -24,9 +24,11 @@ class HashMap {
 
     grow() {
         let previousData = this.data.slice(0);
+        this.data = [];
+        this.capacity = 0;
         this.sizeOfMap *= 2;
-        this.populateData(this.sizeOfMap / 2);
-        this.clear();
+        console.log(this.sizeOfMap);
+        this.populateData(this.sizeOfMap);
         for (let row of previousData) {
             for (let element of row) {
                 this.set(element.key, element.value);
@@ -100,9 +102,10 @@ class HashMap {
     }
 
     clear() {
-        for (let row of this.data) {
-            row.splice(0, row.length);
-        }
+        this.data = [];
+        this.capacity = 0;
+        this.sizeOfMap = 16;
+        this.populateData(this.sizeOfMap);
     }
 
     keys() {

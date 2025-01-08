@@ -3,8 +3,9 @@ import "./style.css";
 
 import { HashMap } from "./hashmap";
 import { List } from "./linked_lists";
+import { Node, Tree } from "./bst";
 
-
+/*
 const test = new HashMap;
 
 test.set('apple', 'red')
@@ -20,9 +21,11 @@ test.set('jacket', 'blue')
 test.set('kite', 'pink')
 test.set('lion', 'golden')
 test.set('elephant', 'grey')
-//console.log(JSON.parse(JSON.stringify(test.data)));
+console.log(JSON.parse(JSON.stringify(test.data)));
 test.set('oubah', 'oubih')
 
-//console.log(JSON.parse(JSON.stringify(test.data)));
-
-//console.log(test.data);
+console.log(JSON.parse(JSON.stringify(test.data)));
+test.clear();
+test.set("dooo", "bbb");
+console.log(test.data);
+*/
